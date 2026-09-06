@@ -1,0 +1,6 @@
+{
+  "name": "LumaLife - Lifestyle Magazine & Blog",
+  "description": "A modern, elegant lifestyle magazine and blogging platform with dynamic stories, bookmarks, category filters, like system, dark mode, and blog management dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

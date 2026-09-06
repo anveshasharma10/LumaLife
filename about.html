@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About LumaLife — Our Story & Philosophy</title>
+    <meta name="description" content="LumaLife is a space for stories, ideas and inspiration that make everyday life more enjoyable. Learn about our ethos and contributors." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Theme Initialization Script -->
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="main-header">
+      <div class="container navbar">
+        <a href="index.html" class="site-logo">
+          <span>Luma<span class="logo-accent">Life</span></span>
+          <span class="logo-sparkle">✦</span>
+        </a>
+
+        <nav class="nav-links-desktop" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="categories.html" class="nav-link">Categories</a>
+          <a href="bookmarks.html" class="nav-link">
+            Bookmarks
+            <span class="bookmark-count-badge" style="display: none;">0</span>
+          </a>
+          <a href="about.html" class="nav-link active">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <form class="nav-search-wrapper" id="nav-search-form" action="blogs.html" method="GET">
+            <span class="nav-search-icon">🔍</span>
+            <input type="search" name="search" class="nav-search-input" placeholder="Search stories..." aria-label="Search stories" />
+          </form>
+
+          <button type="button" class="nav-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle theme">
+            <span class="theme-icon">🌙</span>
+          </button>
+
+          <a href="bookmarks.html" class="nav-btn" aria-label="View saved bookmarks" title="Saved Bookmarks">
+            <span>🔖</span>
+            <span class="bookmark-count-badge" style="display: none;">0</span>
+          </a>
+
+          <a href="dashboard.html" class="nav-dash-link">
+            <span>✍️</span>
+            <span>Dashboard</span>
+          </a>
+
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="site-logo">
+          <span>Luma<span class="logo-accent">Life</span></span>
+          <span class="logo-sparkle">✦</span>
+        </a>
+        <button type="button" class="nav-btn" id="mobile-menu-close" aria-label="Close mobile menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home <span>→</span></a>
+        <a href="blogs.html" class="mobile-nav-link">Blogs <span>→</span></a>
+        <a href="categories.html" class="mobile-nav-link">Categories <span>→</span></a>
+        <a href="bookmarks.html" class="mobile-nav-link">
+          Bookmarks
+          <span class="bookmark-count-badge" style="display: none;">0</span>
+        </a>
+        <a href="about.html" class="mobile-nav-link active">About LumaLife <span>→</span></a>
+        <a href="dashboard.html" class="mobile-nav-link">Author Dashboard <span>→</span></a>
+      </nav>
+
+      <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+        <button type="button" class="btn btn-outline theme-toggle-btn" style="width: 100%; justify-content: center;">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main About Page -->
+    <main class="container" style="padding-top: 4rem; padding-bottom: 5rem;">
+      <!-- Hero Headline -->
+      <div class="about-hero">
+        <span class="section-eyebrow">The Ethos Behind The Magazine</span>
+        <h1 class="section-title" style="font-size: 3.2rem; margin-top: 0.5rem; margin-bottom: 1.25rem;">
+          About LumaLife
+        </h1>
+        <p style="font-size: 1.35rem; color: var(--text-muted); max-width: 680px; margin: 0 auto; font-family: var(--font-serif); font-style: italic; line-height: 1.6;">
+          "LumaLife is a space for stories, ideas and inspiration that make everyday life more enjoyable."
+        </p>
+      </div>
+
+      <!-- Main About 2-Column Section -->
+      <div class="about-grid">
+        <!-- Visual -->
+        <div class="about-image">
+          <img 
+            src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1000&q=80" 
+            alt="Mindful living, plants, and natural light"
+          />
+        </div>
+
+        <!-- Content Blocks -->
+        <div class="about-content-blocks">
+          <!-- 1. Our Story -->
+          <div class="about-block-card">
+            <span style="font-size: 1.6rem; display: inline-block; margin-bottom: 0.5rem;">📖</span>
+            <h3>Our Story</h3>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              Founded with the belief that life is made memorable by small daily joys, LumaLife was born to counteract the noise of the endless digital rush. We wanted to create a peaceful digital sanctuary where readers could find thoughtful perspectives on slow living, intentional morning rituals, memorable weekend travel, and wholesome culinary adventures.
+            </p>
+          </div>
+
+          <!-- 2. What We Write About -->
+          <div class="about-block-card">
+            <span style="font-size: 1.6rem; display: inline-block; margin-bottom: 0.5rem;">🌿</span>
+            <h3>What We Write About</h3>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              Our articles span eleven core lifestyle pillars: <strong>Travel, Food, Fashion, Wellness, Fitness, Self-Care, Personal Growth, Productivity, Hobbies, Books &amp; Entertainment, and Home &amp; Living</strong>. Every piece is written with realistic, actionable advice that fits naturally into real everyday routines.
+            </p>
+          </div>
+
+          <!-- 3. Our Philosophy -->
+          <div class="about-block-card">
+            <span style="font-size: 1.6rem; display: inline-block; margin-bottom: 0.5rem;">✨</span>
+            <h3>Our Philosophy</h3>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              We believe in presence over productivity, conscious curation over excess, and embracing the imperfect beauty of everyday moments. Living well doesn't require drastic lifestyle overhauls—it starts with a quiet cup of tea, a walk in the morning light, or an afternoon lost inside a good book.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meet the Contributors -->
+      <section style="margin-top: 5rem; text-align: center;">
+        <div class="section-header" style="align-items: center;">
+          <span class="section-eyebrow">The Voices</span>
+          <h2 class="section-title">Editorial Team &amp; Writers</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-top: 2.5rem;">
+          <!-- Author 1 -->
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem;">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+              alt="Elena Vance" 
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--accent-terracotta);"
+            />
+            <h4 style="font-family: var(--font-serif); font-size: 1.25rem;">Elena Vance</h4>
+            <p style="font-size: 0.85rem; color: var(--accent-terracotta); font-weight: 600; margin-bottom: 0.5rem;">Mindfulness &amp; Wellness Editor</p>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Passionate about slow mornings, herbal tea ceremonies, and sensory self-care routines.</p>
+          </div>
+
+          <!-- Author 2 -->
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem;">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+              alt="Marcus Thorne" 
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--accent-gold);"
+            />
+            <h4 style="font-family: var(--font-serif); font-size: 1.25rem;">Marcus Thorne</h4>
+            <p style="font-size: 0.85rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">Travel &amp; Culture Columnist</p>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Exploring coastal trail walks, 48-hour city escapes, and mindful mobile photography.</p>
+          </div>
+
+          <!-- Author 3 -->
+          <div class="stat-card" style="flex-direction: column; text-align: center; padding: 2rem;">
+            <img 
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" 
+              alt="Sophia Chen" 
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 3px solid var(--cat-food);"
+            />
+            <h4 style="font-family: var(--font-serif); font-size: 1.25rem;">Sophia Chen</h4>
+            <p style="font-size: 0.85rem; color: var(--cat-food); font-weight: 600; margin-bottom: 0.5rem;">Culinary &amp; Books Contributor</p>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Crafting 20-minute nourishing dinners, discovering indie bookshops, and pottery.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="site-logo">
+              <span>Luma<span class="logo-accent">Life</span></span>
+              <span class="logo-sparkle">✦</span>
+            </a>
+            <p class="footer-desc">
+              Live well. Find inspiration. Enjoy the little things.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="blogs.html" class="footer-link">All Blogs</a>
+              <a href="categories.html" class="footer-link">Categories</a>
+              <a href="bookmarks.html" class="footer-link">Saved Stories</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Topics</h4>
+            <div class="footer-links">
+              <a href="blogs.html?category=Travel" class="footer-link">Travel</a>
+              <a href="blogs.html?category=Food" class="footer-link">Food</a>
+              <a href="blogs.html?category=Wellness" class="footer-link">Wellness</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">About LumaLife</h4>
+            <div class="footer-links">
+              <p class="footer-link" style="color: var(--text-muted);">A modern lifestyle publication for everyday inspiration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 LumaLife. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
