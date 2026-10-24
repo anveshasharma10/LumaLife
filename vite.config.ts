@@ -1,8 +1,25 @@
+import fs from 'fs';
 import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: './',
+    plugins: [
+      {
+        name: 'copy-static-assets',
+        closeBundle() {
+          const folders = ['css', 'js', 'assets'];
+          for (const folder of folders) {
+            const src = path.resolve(__dirname, folder);
+            const dest = path.resolve(__dirname, 'dist', folder);
+            if (fs.existsSync(src)) {
+              fs.cpSync(src, dest, {recursive: true});
+            }
+          }
+        },
+      },
+    ],
     build: {
       rollupOptions: {
         input: {
